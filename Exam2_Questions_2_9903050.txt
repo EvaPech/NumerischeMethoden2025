@@ -1,0 +1,30 @@
+1) Give one disadvantage of forward Euler for stiff ODEs.
+
+As forward Euler is quite simple it is not stable for stiff function, as they may need small time steps (bc. stiff ODEs can change rapidly). 
+FE is inefficient with smaller steps (as it is good for rough estimates)
+ 
+
+2) If you fit M parameters to N data points, what are the degrees of freedom f for the Chi-squared distribution?
+
+v (degreed of freedom) is an integer, given by N-M (for linear parameters); for two parameters it is N-2
+
+3) Please describe in a sentence or two what is a Marcov process.
+
+Markic process describes a random process with a markov property (where each random sample is generated based only on the previous one)
+
+4) Describe in a sentence or two why using the threading module and threads in general in python often doesn't accelerate the code.
+
+threads use the same CPU and run in a shared memory space, GIL (Global Interpreter Lock) can be block it (only one thread at a time)  
+
+5) What does the Nyquist theorem say about sampling a signal with maximum frequency f_max and why is this important?
+
+the nyquist frequency fc = 1/2 Delta (where 1/Delta is the sampling rate) and describes the max frquency where the sampling is completely determined; 
+if you are outside of the frequency range aliasing (=false translating) can occurrs, it corresponfs to 1/2 of the sampling rate  
+
+6) Briefly describe what is PCA.
+
+Principal component analysis; simpple, non parametric method to describe a complex data set. 
+It presents a roadmap on how to reduce the complexity of a data set by lowering the dimesnions. 
+
+7) What is one disadvantage of acceptance–rejection sampling compared to inverse transform sampling?
+if you want exact numbers of random deviates it can be less usefull 
